@@ -1,0 +1,8 @@
+2025-09-02 16:38:39 - ETL Job Started
+2025-09-02 16:38:39 - Extraction phase Started
+2025-09-02 16:38:39 - Extraction phase Ended
+2025-09-02 16:38:39 - Transformation phase Started
+2025-09-02 16:38:39 - Transformation phase Ended
+2025-09-02 16:38:39 - Loading phase Started
+2025-09-02 16:38:39 - Loading phase Ended
+2025-09-02 16:38:39 - ETL Job Ended
