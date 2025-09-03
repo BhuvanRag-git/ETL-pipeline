@@ -1,35 +1,71 @@
-# ETL-pipeline
-# A Comprehensive ETL Workflow with Python for Data Engineers
+📊 ETL Pipeline Project
 
-## 📌 Project Overview
-This project demonstrates a complete **Extract, Transform, Load (ETL)** pipeline using **Python**.  
-It extracts data from multiple file formats (**CSV, JSON, XML**), transforms the data (unit conversions), and loads it into a structured CSV file.  
-The project also includes **logging** to track each step for monitoring and debugging.  
+This project demonstrates an ETL (Extract, Transform, Load) pipeline built in Python.
+It extracts data from multiple file formats (CSV, JSON, XML), transforms it into a consistent format (metric units), and loads the results into a structured CSV file.
+All steps are logged for traceability.
 
----
+🎯 Objectives
 
-## 🎯 Objectives
-- Extract data from **CSV, JSON, XML** files.  
-- Transform the extracted data (heights → meters, weights → kilograms).  
-- Load the transformed data into `transformed_data.csv`.  
-- Maintain a log file `log_file.txt` with timestamps for each ETL phase.  
-- Ensure the project follows **secure coding, modular design, and PEP 8 standards**.  
+Extract data from CSV, JSON, and XML files.
 
----
+Transform measurements:
 
-## 🛠️ Technologies Used
-- **Python 3.x**
-- **pandas** (data handling)
-- **xml.etree.ElementTree** (parsing XML)
-- **glob** (file handling)
-- **datetime & logging** (progress tracking)
+Convert height from inches → meters.
 
----
+Convert weight from pounds → kilograms.
 
-## 📂 Dataset
-Download the dataset from IBM Skills Network:  
-[Dataset Link](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0221EN-SkillsNetwork/labs/module%206/Lab%20-%20Extract%20Transform%20Load/data/source.zip)
+Load the cleaned data into a CSV file.
 
-Unzip it into your project directory:
-```bash
-unzip source.zip -d ./unzipped_folder
+Log every ETL step with timestamps for auditing.
+
+⚙️ Installation
+
+Clone this repo and install dependencies:
+
+git clone https://github.com/<your-username>/ETL-pipeline.git
+cd ETL-pipeline
+pip install -r requirements.txt
+
+🚀 Usage
+
+Run the ETL pipeline:
+
+python etl_pipeline.py
+
+📂 Outputs
+
+✅ transformed_data.csv → Final structured dataset (metric units).
+
+✅ log_file.txt → Logs of ETL operations (Extraction, Transformation, Loading).
+
+📁 Project Structure
+ETL-pipeline/
+│── etl_pipeline.py        # Main ETL script
+│── requirements.txt       # Dependencies
+│── README.md              # Project documentation
+│── log_file.txt           # ETL logs
+│── transformed_data.csv   # Final output
+
+🛠️ Tech Stack
+
+Python 3
+
+pandas → Data manipulation
+
+glob → File handling
+
+xml.etree.ElementTree → XML parsing
+
+datetime → Logging with timestamps
+
+🔐 Secure Code Practices
+
+No credentials are hardcoded.
+
+Follows PEP-8 coding standards.
+
+Modular design with separate functions for Extract, Transform, Load, and Logging.
+
+👨‍💻 Author
+
+Bhuvanikha Rag
